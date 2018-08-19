@@ -12,7 +12,7 @@ void Log::UserLog(string loginname, string username, string operation, int statu
     ofstream fout;
     fout.open("UserLog.txt", ios::app); // Open and append to UserLog.txt
     if (!fout) { // If can't open
-        cerr << "UserLog.txt can't open" << endl;
+        cerr << "UserLog.txt can't be opened" << endl;
         abort(); // Exit
     }
     SYSTEMTIME sys;
@@ -33,7 +33,7 @@ void Log::PcLog(string loginname, string Pcmodel, string operation, int number) 
     ofstream fout;
     fout.open("PcLog.txt", ios::app); // Open and append to PcLog.txt
     if (!fout) { // If can't open
-        cerr << "PcLog.txt can't open" << endl;
+        cerr << "PcLog.txt can't be opened" << endl;
         abort(); // Exit
     }
     SYSTEMTIME sys;
@@ -56,7 +56,7 @@ void Log::CashLog(string loginname, string Pcmodel, string operation, double mon
     ofstream fout;
     fout.open("CashLog.txt", ios::app); // Open and append to PcLog.txt
     if (!fout) { // If can't open
-        cerr << "CashLog.txt can't open" << endl;
+        cerr << "CashLog.txt can't be opened" << endl;
         abort(); // Exit
     }
     SYSTEMTIME sys;
@@ -73,7 +73,5 @@ void Log::CashLog(string loginname, string Pcmodel, string operation, double mon
         lib.SetOutcome(money + lib.GetOutcome());
     }
     fout.close(); // Close CashLog.txt
-}//
-// Created by tanze on 8/15/2018.
-//
+}
 
