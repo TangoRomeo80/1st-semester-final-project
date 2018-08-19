@@ -34,8 +34,10 @@ void Welcome() { // Welcome interface
     int status = 0;
     int time = 0;
     char choice;
-    cout << "Welcome to B1 Pc Store Management System " << endl;
-    cout << "Are you a customer or staff?\n1.Customer\n2.Staff\n";
+    cout << "----------------------------------------\n";
+    cout << "Welcome to B1 Pc Store Management System \n";
+    cout << "----------------------------------------\n"<< endl;
+    cout << "Are you a customer or staff?\n\n1.Customer\n2.Staff\n";
     cin>> choice;
     if(choice=='1'){
         status=3;
