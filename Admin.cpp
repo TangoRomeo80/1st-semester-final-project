@@ -26,9 +26,9 @@ void Admin::AddUser() { // Add new user
                 lib.UserArray[i].SetUsername(name);
                 lib.UserArray[i].SetPassword(pwd);
                 lib.UserArray[i].SetStatus(3); // Set information for the user whose status was 0
-                cout << "Add user succsessfully!~ " << endl;
+                cout << "User added successfully!~ " << endl;
                 Sleep(1000);
-                cout << "Automatic quit after 3 seconds." << endl;
+                cout << "System will quit after 3 seconds." << endl;
                 Sleep(2000);
                 rec.UserLog(account, name, "add", 0); // Update UserLog.txt with "add" operation
                 PrintUserArray(); // Output user information to User.txt
@@ -41,9 +41,9 @@ void Admin::AddUser() { // Add new user
     newuser.SetPassword(pwd);
     newuser.SetStatus(3);
     lib.UserArray.push_back(newuser); // Add newuser to lib.UserArray
-    cout << "Add user succsessfully!~ " << endl;
+    cout << "User added successfully!~ " << endl;
     Sleep(1000);
-    cout << "Automatic quit after 3 seconds." << endl;
+    cout << "System will quit after 3 seconds." << endl;
     Sleep(2000);
     rec.UserLog(account, name, "add", 0); // Update UserLog.txt with "add" operation
     PrintUserArray(); // Output user information to User.txt
@@ -62,17 +62,17 @@ void Admin::DelUser() { // Delete old user
                 cin >> choice;
                 if (choice == 1) { // Make sure want to delete this user
                     lib.UserArray[i].SetStatus(0);
-                    cout << "Delete user succsessfully!~ " << endl;
+                    cout << "User deleted succsessfully!~ " << endl;
                 } else cout << "Delete canceled . " << endl; // Cancel the delete operation
                 Sleep(1000);
-                cout << "Automatic quit after 3 seconds." << endl;
+                cout << "System will quit after 3 seconds." << endl;
                 Sleep(2000);
                 rec.UserLog(account, name, "del", 0); // Update UserLog.txt with "del" operation
                 PrintUserArray(); // Output user information to User.txt
                 return;
             }
         }
-    cout << "User not exist! " << endl; // Username not exist in User.txt or status equal to 0
+    cout << "User  does not exist! " << endl; // Username not exist in User.txt or status equal to 0
     Sleep(1000);
 }
 
@@ -89,10 +89,10 @@ void Admin::SetUser() { // Change user's status (like Customer, Staff, Administa
                 cin >> choice;
                 if (choice != 0) { // Make sure want to change this user's status
                     lib.UserArray[i].SetStatus(choice);
-                    cout << "Change user status succsessfully!~ " << endl;
+                    cout << "User status changed successfully!~ " << endl;
                 } else cout << "Change canceled." << endl; // Cancel the change operation
                 Sleep(1000);
-                cout << "Automatic quit after 3 seconds." << endl;
+                cout << "System will quit after 3 seconds." << endl;
                 Sleep(2000);
                 rec.UserLog(account, name, "set", choice); // Update UserLog.txt with "set" operation
                 PrintUserArray(); // Output user information to User.txt
@@ -154,7 +154,7 @@ void Admin::Interface(string username) { // Admin interface
             cin >> command;
             if (command[0] != '*' && command[0] != '&' && command[0] != '%' && command[0] != '$' && (command[0] < '0' || command[0] > '9')) { // If command doesn't match input rule
                 cout << endl << "Wrong!! You should input '*','&','%','$' or number between 0-9" << endl;
-                cout << "Please repick an order :) " << endl; // Ask to input again
+                cout << "Please reselect an order :) " << endl; // Ask to input again
             } else break;
         }
         switch (command[0]) {
