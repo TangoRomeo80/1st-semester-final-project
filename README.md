@@ -1,4 +1,4 @@
-The steps to run the program is as follows:
+The steps to run the program is as follows:<br>
 1.Ensure that your compiler supports at least c++ 11.
 2.Open a new project in an IDE.
 3.Open new empty files and save them as the names of the files included here.
