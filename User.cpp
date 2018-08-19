@@ -13,7 +13,7 @@ void User::PrintUserArray() { // Output user information to User.txt
     ofstream fout;
     fout.open("User.txt"); // Open and cover User.txt
     if (!fout) { // If can't open
-        cerr << "User.txt can't open" << endl;
+        cerr << "User.txt can't be opened" << endl;
         abort(); // Exit
     }
     for (size_t i = 0; i < lib.UserArray.size(); i++ ) // Output each user's information
@@ -148,7 +148,7 @@ void User::PcInfor() { // See more information of one Pc
                 cin >> temp;
             return;
         }
-    cout << "Not found this Pc! " << endl;
+    cout << "This Pc not found! " << endl;
     Sleep(1000);
 }
 
@@ -160,14 +160,14 @@ void User::ChangePsw() { // User choose to change his or her password
     cout << "Please repeat it: " << endl;
     cin >> temp;
     if (temp != password) { // If two input are not match then exit
-        cout << "Two password doesn't match!! Change password failed... " << endl;
+        cout << "Two password doesn't match!! Changing password failed... " << endl;
         Sleep(1500);
         return;
     } else {
         for (size_t i = 0; i < lib.PcArray.size(); i++)
             if (lib.UserArray[i].GetUsername() == account )
                 lib.UserArray[i].SetPassword(password); // Change password
-        cout << "Password change successfully !~~ " << endl;
+        cout << "Password changed successfully !~~ " << endl;
         rec.UserLog(account, account, "psw", 0); // Update UserLog.txt with "psw" operation
         PrintUserArray(); // Output user information to User.txt
         Sleep(2000);
