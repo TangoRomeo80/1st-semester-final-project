@@ -33,7 +33,7 @@ void Info::LoadPc() { // Load Pc.txt
 //  ofstream fout("Pc.txt");
     ifstream fin("Pc.txt"); // Open and read Pc.txt
     if(!fin) { // If can't open
-        cerr << "Pc.txt can't open" << endl;
+        cerr << "Pc.txt can't be opened" << endl;
         abort(); // Exit
     }
     while (getline(fin, str)) {
@@ -78,7 +78,7 @@ void Info::LoadCash() { // Load Cash.txt
 //    ofstream fout("Cash.txt");
     ifstream fin("Cash.txt"); // Open and read Pc.txt
     if(!fin) { // If can't open
-        cerr << "Cash.txt can't open" << endl;
+        cerr << "Cash.txt can't be opened" << endl;
         abort(); // Exit
     }
     fin >> income; // Input income
