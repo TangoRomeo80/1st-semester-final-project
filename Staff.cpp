@@ -238,7 +238,7 @@ void Staff::Interface(string username) { // Staff interface
     while (1) {
         system("cls");
         cout << "Welcome! " << username << " You are staff~" << endl;
-        cout << "Please choose what you want to do by input a number " << endl;
+        cout << "Please choose what you want to do by inputting a number " << endl;
         while (1) { // The operation list
             cout << "1 ----- Add new Pc" << endl;
             cout << "2 ----- Delete Pc" << endl;
@@ -253,7 +253,7 @@ void Staff::Interface(string username) { // Staff interface
             cin >> command;
             if (command[0] < '0' || command[0] > '9') { // If command doesn't match input rule
                 cout << endl << "Wrong!! You should input number between 0-9 " << endl;
-                cout << "Please repick a number :) " << endl; // Ask to input again
+                cout << "Please reselect a number :) " << endl; // Ask to input again
             } else break;
         }
         switch (command[0]) {
