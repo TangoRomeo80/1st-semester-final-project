@@ -28,7 +28,7 @@ void Customer::BuyPc() { // Customer buy Pcs
                 lib.PcArray[i].SetNumber(lib.PcArray[i].GetNumber() - stoi(temp)); // Decrease the number of this Pc in lib.PcArray
                 cout << "Buy " << stoi(temp) << " copies of that Pc, succsessfully!~ " << endl;
                 Sleep(1000);
-                cout << "Automatic quit after 3 seconds." << endl;
+                cout << "System will quit after 3 seconds." << endl;
                 Sleep(2000);
                 rec.PcLog(account, model, "buy", stoi(temp)); // Update PcLog.txt with "buy" operation
                 rec.CashLog(account, model, "buy", lib.PcArray[i].NetPrice(stoi(temp))); // Update CashLog.txt with "buy" operation
@@ -75,7 +75,7 @@ void Customer::Interface(string username) { // Admin interface
     while (1) {
         system("cls");
         cout << "Welcome! " << username << " You are a customer~" << endl;
-        cout << "Please choose what you want to do by input a number " << endl;
+        cout << "Please choose what you want to do by inputting a number " << endl;
         while (1) { // The operation list
             cout << "1 ----- Buy Pc" << endl;
             cout << "2 ----- Refund" << endl;
@@ -87,8 +87,8 @@ void Customer::Interface(string username) { // Admin interface
             cout << "0 ----- Exit;" << endl;
             cin >> command;
             if (command[0] < '0' || command[0] > '7') {
-                cout << endl << "Wrong!! You should input number between 0-7 " << endl;
-                cout << "Please repick a number :) " << endl;
+                cout << endl << "Wrong input!! You should input number between 0-7 " << endl;
+                cout << "Please reselect a number :) " << endl;
             } else break;
         }
         switch (command[0]) {
