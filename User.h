@@ -18,7 +18,7 @@ class User {
 public:
     void ListPcAll(); // List all Pc
     void ListPcByC(); // List Pc by category
-    void ListPcByN(); // List Pc by name
+    void ListPcByN(); // List Pc by company
     void PcInfor(); // See more information of one Pc
     void PrintUserArray(); // Output user information to User.txt
     void PrintPcArray(); // Output Pc information to Pc.txt

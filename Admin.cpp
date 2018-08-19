@@ -130,7 +130,7 @@ void Admin::ListUser() { // List all users' information
 }
 
 void Admin::Interface(string username) { // Admin interface
-    char command;
+    string command;
     int stop = 0;
     while (1) {
         system("cls");
@@ -146,18 +146,18 @@ void Admin::Interface(string username) { // Admin interface
             cout << "7 ----- List Pc (ALL)" << endl;
             cout << "8 ----- List Pc (By Category)" << endl;
             cout << "9 ----- List Pc (By Name)" << endl;
-            cout << "* ----- Show more Pc information by ISBN number" << endl;
+            cout << "* ----- Show more Pc information by model number" << endl;
             cout << "& ----- List all users' information" << endl;
             cout << "$ ----- Lookup net profit" << endl;
             cout << "% ----- Change my password" << endl;
             cout << "0 ----- Exit;" << endl;
             cin >> command;
-            if (command != '*' && command != '&' && command != '%' && command != '$' && (command < '0' || command > '9')) { // If command doesn't match input rule
+            if (command[0] != '*' && command[0] != '&' && command[0] != '%' && command[0] != '$' && (command[0] < '0' || command[0] > '9')) { // If command doesn't match input rule
                 cout << endl << "Wrong!! You should input '*','&','%','$' or number between 0-9" << endl;
                 cout << "Please repick an order :) " << endl; // Ask to input again
             } else break;
         }
-        switch (command) {
+        switch (command[0]) {
             case '1':
                 AddUser(); // Add new user
                 break;
