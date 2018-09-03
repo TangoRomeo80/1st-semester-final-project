@@ -1,0 +1,2 @@
+[ 2018-9-3 10:42:57 ] Manager(Rahat) add new Pcs(model:D100) with 4 copy(s)
+[ 2018-9-3 11:3:23 ] Manager(Rahat) change Pc(model:D100)'s information 

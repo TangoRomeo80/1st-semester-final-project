@@ -1,0 +1,10 @@
+[ 2018-9-3 9:56:21 ] Admin(Rahat) add a new user(Mowmita Nazia Afsan)
+[ 2018-9-3 9:57:10 ] Admin(Rahat) add a new user(Ahsanul Haque)
+[ 2018-9-3 9:58:4 ] Admin(Rahat) set user(Mowmita Nazia Afsan)'s status to (1) 
+[ 2018-9-3 9:58:38 ] Admin(Rahat) set user(Ahsanul Haque)'s status to (2) 
+[ 2018-9-3 10:7:16 ] Admin(Rahat) set user(Ahsanul Haque)'s status to (2) 
+[ 2018-9-3 10:43:58 ] User(Rahat) change his/her password 
+[ 2018-9-3 11:17:17 ] User(Mowmita Nazia Afsan) change his/her password 
+[ 2018-9-3 11:17:59 ] Admin(Rahat) delete a user(Mowmita Nazia Afsan)
+[ 2018-9-3 11:18:26 ] Admin(Rahat) add a new user(Nazia Afsan Mowmita)
+[ 2018-9-3 11:21:36 ] Admin(Rahat) set user(Nazia Afsan Mowmita)'s status to (1) 
